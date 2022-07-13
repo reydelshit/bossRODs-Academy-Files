@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background: #0A0A0A;
+}
+footer span {
+  margin-left: 2rem;
+  color: #FBFBFB !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #0A0A0A;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C96BD9;
+}
+
+header {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .header__logo-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+header .header__logo-container img {
+  margin-right: 2rem;
+}
+header nav {
+  width: 30%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav :first-child {
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+}
+main .intro__left-section {
+  width: 50%;
+  padding: 1rem;
+  margin-left: 5rem;
+  display: grid;
+  place-items: center;
+}
+main .intro__left-section img {
+  width: 60%;
+}
+main .intro__left-section .name__container {
+  margin-top: -5rem;
+  padding: 1rem;
+  text-align: center;
+}
+main .intro__left-section .name__container h1 {
+  font-size: 3rem;
+}
+main .intro__left-section .name__container span {
+  font-size: 1.5rem;
+}
+main .intro__right-section {
+  width: 70%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .intro__right-section .circular__intro-container {
+  margin: 3rem 0;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+main .intro__right-section .circular__intro-container .circular__intro {
+  display: grid;
+  place-items: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  color: #FBFBFB;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+main .intro__right-section .circular__intro-container .red {
+  background-color: #DC6E6E;
+}
+main .intro__right-section .circular__intro-container .cyan {
+  background-color: #6AC1D4;
+}
+main .intro__right-section .circular__intro-container .violet {
+  background-color: #C96BD9;
+}
+main .intro__right-section h1 {
+  font-size: 5rem;
+}
+main .intro__right-section p {
+  font-size: 2rem;
+}
+main .intro__right-section span {
+  width: 80%;
+  word-wrap: break-word;
+  font-size: 1.5rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  margin-top: 4rem;
+}
+section span {
+  display: block;
+}
+section .ctx__left {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 30%;
+  height: 100%;
+  margin-right: 1rem;
+}
+section .ctx__left .ct__sec-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  height: 8rem;
+  margin-bottom: 2rem;
+}
+section .ctx__left .ct__sec-container .ct__sec-icon {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+section .ctx__left .ct__sec-container .ct__sec-icon img {
+  margin-right: 1rem;
+}
+section .ctx__left .ct__sec-container .ct__text {
+  display: block;
+  margin-left: 2.5rem;
+}
+section .ctx__left h1 {
+  font-size: 3rem;
+}
+section .ctx__left p {
+  font-size: 1.5rem;
+}
+section .ctx__right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #EFEFEF;
+}
+section .ctx__right div {
+  width: 80%;
+  position: relative;
+}
+section .ctx__right div input {
+  padding: 1rem 3rem;
+  width: 100%;
+  height: 5rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  border: 1px solid #A39B9B;
+}
+section .ctx__right div img {
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 2rem;
+}
+section .ctx__right div textarea {
+  width: 100%;
+  height: 10rem;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #A39B9B;
+}
+section .ctx__right button {
+  width: 80%;
+  height: 4rem;
+  border-radius: 5rem;
+  border: none;
+  color: #FBFBFB;
+  background: #0A0A0A;
+  cursor: pointer;
+}
+section .ctx__right button:hover {
+  background: #C96BD9;
+  color: #FBFBFB;
+}
+
+@media screen and (max-width: 1090px) {
+  header {
+    padding: 2rem;
+  }
+  header .header__logo-container h1 {
+    display: none;
+  }
+  header nav {
+    width: 100%;
+  }
+  main {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    height: 100%;
+  }
+  main .intro__left-section {
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+  main .intro__left-section img {
+    width: 60%;
+  }
+  main .intro__left-section .name__container {
+    margin-top: 0;
+  }
+  main .intro__right-section {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .intro__right-section .circular__intro-container {
+    width: 100%;
+    justify-content: space-around;
+  }
+  main .intro__right-section h1 {
+    font-size: 3rem;
+  }
+  main .intro__right-section p {
+    font-size: 1rem;
+  }
+  main .intro__right-section span {
+    width: 100%;
+    word-wrap: break-word;
+    font-size: 1rem;
+  }
+  section {
+    flex-direction: column;
+    height: 100%;
+    margin-top: 4rem;
+  }
+  section .ctx__left {
+    align-items: center;
+    width: 100%;
+  }
+  section .ctx__left .ct__sec-container {
+    padding: 0;
+    height: 5rem;
+    margin-bottom: 1rem;
+  }
+  section .ctx__left .ct__sec-container .ct__text {
+    margin-left: 2rem;
+  }
+  section .ctx__left h1 {
+    font-size: 2rem;
+  }
+  section .ctx__left p {
+    font-size: 1rem;
+  }
+  section .ctx__right {
+    margin: 2rem 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+  }
+  section .ctx__right div input {
+    padding: 0.5rem 2rem;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+  section .ctx__right div img {
+    top: 18px;
+    width: 1rem;
+  }
+  section .ctx__right button {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 579px) {
+  header {
+    padding: 0 1rem;
+  }
+  header .header__logo-container img {
+    margin-right: 1rem;
+  }
+  header nav {
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+  }
+  main .circular__intro-container .circular__intro {
+    width: 7rem !important;
+    height: 7rem !important;
+  }
+}

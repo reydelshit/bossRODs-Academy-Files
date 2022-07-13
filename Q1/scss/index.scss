@@ -1,0 +1,28 @@
+
+@import "config";
+@import "footer";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $main-font;
+    color: $color6;
+
+}
+
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #C96BD9;
+}
+
+@import "header";
+@import "main";
+@import "contact";
+
+@import "mobile";
